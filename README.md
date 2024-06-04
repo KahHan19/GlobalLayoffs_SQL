@@ -1,50 +1,53 @@
-# SQL_DataCleaning
+# SQL Data Cleaning: Company Layoff Analysis (2021)
 
-## Dataset
-- FROM: https://github.com/AlexTheAnalyst/MySQL-YouTube-Series
-- This dataset include data of company lay offs around the world in 2021
-  `company` text,
-  `location` text,
-  `industry` text,
-  `total_laid_off` int DEFAULT NULL,
-  `percentage_laid_off` text,
-  `date` text, (Which would be atered later in the project from text -> Date)
-  `stage` text,
-  `country` text,
-  `funds_raised_millions` int DEFAULT NULL,
-  `row_num` INT
+This repository explores data cleaning techniques in SQL using a dataset of company layoffs in 2021. We'll focus on duplicate removal, data standardization, handling null values, and identifying redundant rows/columns.
 
 
+## Dataset: Company Layoffs (2021)
 
-## Focus
+Source: [AlexTheAnalyst's MySQL YouTube Series](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series)
 
-- Duplicate Table
-1. Ensure that we are not manipulating the raw data, in case of mistakes
+This dataset contains information about company layoffs around the world in 2021. It includes columns for:
+
+* `company` (text)
+* `location` (text)
+* `industry` (text)
+* `total_laid_off` (integer)
+* `percentage_laid_off` (text)
+* `date` (text - to be converted to Date format)
+* `stage` (text)
+* `country` (text)
+* `funds_raised_millions` (integer)
+* `row_num` (integer - unique identifier)
 
 
-- Data Cleaning (Preprocessing)
-2. Remove Duplicates
-      - Indetify Duplicate Data and Asses the importance of the data
-      - Duplicate a table to include a unique key indentifier for individual row (In our case is row number count)
-      - Delete Duplicate rows
+
+## Focus Areas
+
+This project will address several data cleaning tasks:
+
+* **Create Duplicate Table** Ensure or preprocess is done a on duplicate, this is done to mitigate and accidental error affecting the original raw data.
   
-
-3. Standardise Data
-     - Indetify row which includes data with the same meaning but morphologically different
-     - Update the data into the same name categories
-     - Modify Date from "Text" -> "Date"
+* **Duplicate Removal:** Identify and remove duplicate data while preserving the integrity of the original dataset
   
-4. Null Values
-     - Identify Null and Blank Values in Data
-     - Replace Blank Values with Null
-     - Identify companies that have an existing industry label on some data and are missing it on other data
-     - Populate the missing data in these company (Industry Column)
-
-5. Remove Redundant Row/Column
-     - Remove row and column that are deemed unecessary
-     - Remove Column that contains too much null values.
+* **Data Standardization:** Ensure consistency in data format and terminology. This includes converting "date" from text to a Date format.
   
+* **Null Values:**
+    - Handle missing data through identification
+    - Replace Blank Values with Null
+    - Identify companies that have an existing industry label on some data and are missing it on other data
+    - Populate the missing data in these company (Industry Column)
+ 
+      
+* **Redundant Rows/Columns:** Identify and remove unnecessary rows or columns that may not contribute valuable information.
 
+**Resources:**
+
+* [AlexTheAnalyst's MySQL YouTube Series](https://github.com/AlexTheAnalyst/MySQL-YouTube-Series)
+* [Data Cleaning Tutorial](https://www.youtube.com/watch?v=rGx1QNdYzvs&list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF)
+
+
+  
 
 
 
