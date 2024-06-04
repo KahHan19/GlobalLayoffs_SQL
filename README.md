@@ -51,23 +51,3 @@ This project will address several data cleaning tasks:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Resource:
-https://www.youtube.com/watch?v=4UltKCnnnTA
-
-
-- https://github.com/AlexTheAnalyst/MySQL-YouTube-Series
-- https://youtu.be/4UltKCnnnTA?si=e-_El8RIzW3iffW1
-
-
-
